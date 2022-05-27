@@ -5,11 +5,9 @@ import java.util.Date;
 
 public class Cliente {
     private Long id;
-    private Long idTipoImovel;
-    private String titulo;
-    private String descricao;
-    private Date dataCriacao;
-    private Float valor;
+    private String nome;
+    private String email;
+    private String senha;
     private String telefone;
 
     public Long getId() {
@@ -20,44 +18,28 @@ public class Cliente {
         this.id = id;
     }
 
-    public Long getIdTipoImovel() {
-        return idTipoImovel;
+    public String getNome() {
+        return nome;
     }
 
-    public void setIdTipoImovel(Long idTipoImovel) {
-        this.idTipoImovel = idTipoImovel;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getEmail() {
+        return email;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public Date getDataCriacao() {
-        return dataCriacao;
-    }
-
-    public void setDataCriacao(Date dataCriacao) {
-        this.dataCriacao = dataCriacao;
-    }
-
-    public Float getValor() {
-        return valor;
-    }
-
-    public void setValor(Float valor) {
-        this.valor = valor;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public String getTelefone() {
@@ -67,6 +49,4 @@ public class Cliente {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-    
-    
 }
